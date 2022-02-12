@@ -1,4 +1,4 @@
-const statusp = document.querySelector("#status");
+const statusp = document.querySelector("#react-target");
 const connectBtn = document.querySelector('#connectBtn');
 const checkoutBtn = document.querySelector('#checkoutBtn');
 //const connectBtnHeader = document.querySelector('#connectBtnHeader');
