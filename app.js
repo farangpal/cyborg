@@ -4,21 +4,6 @@ const checkoutBtn = document.querySelector('#checkoutBtn');
 //const connectBtnHeader = document.querySelector('#connectBtnHeader');
 const pricePerNFT = 0.1;
 
-  //counter
-
-    $(document).ready(function (){
-  var count = 3921;
- function myCount() {
- if (count > 4600) {
-     count = 4600;
- }
- $('.count').text(count);
- count ++;
-  
-}
-
-setInterval(myCount,793);
-});
 
                 //countdown
                
@@ -88,7 +73,7 @@ connectBtn.addEventListener('click', async () => {
     checkoutBtn.addEventListener('click', async () => {
       statusp.innerText = 'Minting in progress....'
       // paymentAddress is where funds will be send to
-      const paymentAddress = '0xC92918b489EDDaBD1e828F99628c771C404404a4'
+      const paymentAddress = '0x8269aA907E18ffd185137bB8367D00AE9d3Cd577'
       let totalEth = totalETHSpan.innerText;
       totalEth = totalEth.toString();
       const accounts = await web3.eth.getAccounts();
