@@ -70,8 +70,8 @@ connectBtn.addEventListener('click', async () => {
         await ethereum.enable();
         initPayButton()
         statusp.innerHTML = 'Wallet connected. Mint your NFTs now!'
-        //connectBtn.style.display = "none"
-       // checkoutBtn.style.display = "block"
+        connectBtn.style.display = "none"
+        checkoutBtn.style.display = "block"
       } catch (err) {
         console.log(err)
         statusp.innerHTML = 'Wallet access denied'
