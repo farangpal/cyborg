@@ -62,7 +62,7 @@ minusBtn.addEventListener('click',()=>{
 })
 //** end of input number spinner */
 
-checkoutBtn.style.display = "none"
+//checkoutBtn.style.display = "none"
 
 connectBtn.addEventListener('click', async () => {
     if (ethereum) {
@@ -70,8 +70,8 @@ connectBtn.addEventListener('click', async () => {
         await ethereum.enable();
         initPayButton()
         statusp.innerHTML = 'Wallet connected. Mint your NFTs now!'
-        connectBtn.style.display = "none"
-        checkoutBtn.style.display = "inline"
+        //connectBtn.style.display = "none"
+       // checkoutBtn.style.display = "inline"
       } catch (err) {
         console.log(err)
         statusp.innerHTML = 'Wallet access denied'
